@@ -145,6 +145,10 @@ a click that takes a second looks like a click that did nothing.
             <a href="{% url 'inventory:stock_valuation' %}" class="nav-link {% if request.resolver_match.url_name == 'stock_valuation' %}nav-link-active{% endif %}"
                {% if request.resolver_match.url_name == 'stock_valuation' %}aria-current="page"{% endif %}>Inventory valuation</a>
           </li>
+          <li>
+            <a href="{% url 'inventory:low_stock' %}" class="nav-link {% if request.resolver_match.url_name == 'low_stock' %}nav-link-active{% endif %}"
+               {% if request.resolver_match.url_name == 'low_stock' %}aria-current="page"{% endif %}>Low stock</a>
+          </li>
         </ul>
 
         <p class="nav-group" id="nav-relationships">Relationships</p>
